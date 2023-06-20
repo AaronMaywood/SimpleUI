@@ -1,4 +1,45 @@
+/* リセット */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* ページ全体の構造 */
+body {
+	display: grid;
+	grid-template-areas:
+		"header header"
+		"nav    main"
+		"footer footer";
+	grid-template-columns: 1fr 5fr;
+}
+
+header {
+	grid-area: header;
+	background: #F6AD55;
+}
+
+nav {
+	grid-area: nav;
+	background: #F687B3;
+}
+
+main {
+	grid-area: main;
+	background: #68D391;
+}
+
+footer {
+	padding: 1rem;
+	grid-area: footer;
+	background: #63b3ed;
+	text-align: center;
+}
+
+/* UI部品 - カード */
 .card {
+	background: white;
 	border: 1px solid gray;
 	border-radius: 5px;
 	display: flex;
@@ -8,7 +49,7 @@
 
 .card__description {
 	padding: 1rem;
-	line-height: 0.8;
+	line-height: 1.5;
 }
 
 .card__description-marks {
