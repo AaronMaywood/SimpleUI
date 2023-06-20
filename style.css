@@ -1,0 +1,42 @@
+.card {
+	border: 1px solid gray;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	width: fit-content;
+}
+
+.card__description {
+	padding: 1rem;
+	line-height: 0.8;
+}
+
+.card__description-marks {
+	color: #718096;
+}
+
+.label {
+	padding: 0 10px;
+	background: #B2F5EA;
+	border-radius: 10px;
+}
+
+.card__description-desk {
+}
+
+.card__description-price {
+	color: #2D3748;
+}
+
+.card__description-rank {
+	color: #4A5568;
+}
+
+.star--point {
+	color: #319795;
+}
+
+.star--no-point {
+	color: #E2E8F0;
+}
+
