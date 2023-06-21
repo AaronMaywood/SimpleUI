@@ -16,18 +16,21 @@ body {
 }
 
 header {
+	padding: 1rem;
 	grid-area: header;
 	background: #F6AD55;
 }
 
 nav {
+	padding: 1rem;
 	grid-area: nav;
 	background: #F687B3;
 }
 
 main {
+	padding: 1rem;
 	grid-area: main;
-	background: #68D391;
+	background: lightyellow;
 }
 
 footer {
@@ -37,7 +40,104 @@ footer {
 	text-align: center;
 }
 
+main > section {
+	margin-bottom: 2rem;
+}
+
+/* UI部品 - ボタン */
+
+.button {
+	padding: 0 1rem;
+	border: none;
+	background: #3182ce;
+	border-radius: 10px;
+	color: white;
+	display: flex;
+	align-items: center;
+}
+
+.button:hover {
+	background: #2b6cb0;
+}
+
+.button:active {
+   	background: #2c5282; 
+}
+
+.icon {
+	font-size: 2rem;
+	position: relative;
+	top: -3px;
+}
+
+/* UI部品 - 入力要素 */
+
+fieldset {
+	margin: 1rem;
+	padding: 2rem;
+	background: white;
+}
+
+.required {
+	color: #E53E3E;
+}
+
+.input-inline {
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+}
+
+.input-box {
+	margin: 0 0 1rem;
+	padding: 0.75rem;
+	border: 1px solid #E2E8F0;
+	border-radius: 12px;
+	display: flex;
+	flex-direction: column;
+	gap: 0.3rem;
+}
+
+.input-box__label {
+	color: #2D3748;
+	font-weight: 500;
+}
+
+.input-box__desc {
+	color: #4A5568;
+	font-size: 0.875rem;
+}
+
+input[type="email"],
+input[type="text"],
+textarea
+{
+	padding: 0 1rem;
+}
+
+/* UI部品 - リスト */
+
+ul, ol {
+	padding-left: 3rem;
+}
+
+/* UI部品 - 表 */
+table, th, td {
+	border: 1px solid gray;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0px;
+}
+
+th {
+	background: black;
+	color: white;
+}
+
 /* UI部品 - カード */
+
 .card {
 	background: white;
 	border: 1px solid gray;
@@ -81,28 +181,3 @@ footer {
 	color: #E2E8F0;
 }
 
-/* UI部品 - ボタン */
-
-.button {
-	padding: 0 1rem;
-	border: none;
-	background: #3182ce;
-	border-radius: 10px;
-	color: white;
-	display: flex;
-	align-items: center;
-}
-
-.button:hover {
-	background: #2b6cb0;
-}
-
-.button:active {
-   	background: #2c5282; 
-}
-
-.icon {
-	font-size: 2rem;
-	position: relative;
-	top: -3px;
-}

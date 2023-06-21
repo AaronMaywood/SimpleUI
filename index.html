@@ -6,18 +6,90 @@
     <title>Simple UI パーツ集</title>
 	<link rel="stylesheet" href="reset.css">
 	<link rel="stylesheet" href="style.css">
+	<script>
+		console.log('script要素の中にはJavaScriptのプログラムを書きます。たとえばこれはデベロッパーツールのコンソール上にこのメッセージを表示するプログラムです');
+	</script>
 </head>
 <body>
 	<header>
-		<h1>UI見本</h1>
+		<h1>HTML/CSSによる画面部品(UI)の例</h1>
 	</header>
 	<nav>
+		<h2>UI要素一覧</h2>
 		<ul>
-			<li><a href="#card">カード</a></li>
+			<li><a href="#link">ハイパーリンク（リンク）</a></li>
 			<li><a href="#button">ボタン</a></li>
+			<li><a href="#lists">リスト</a></li>
+			<li><a href="#table">表(テーブル)</a></li>
+			<li><a href="#inputs">入力フォームの要素</a></li>
+			<li><a href="#card">カード（複雑なコーディングの例）</a></li>
 		</ul>
 	</nav>
 	<main>
+		<section>
+			<h2 id="link">ハイパーリンク（リンク）</h2>
+			<p><a href="https://developer.mozilla.org/ja/docs/Web/HTML">別のページ(MDN HTML:HyperTex Markup Lnaguage)に対するリンク</a>の例(target="_blank"なし)</p>
+			<p><a href="https://developer.mozilla.org/ja/docs/Web/HTML" target="_blank">別のページ(MDN HTML:HyperTex Markup Lnaguage)に対するリンク</a>の例(target="_blank"付き)</p>
+			<p><a href="#card">ページ内(カード)に対するリンク</a>の例</p>
+		</section>
+		<section>
+			<h2 id="button">ボタン</h2>
+			<button class="button" type="button"><span class="icon">✉️  </span>BUTTON</button>
+		</section>
+		<section>
+			<h2 id="lists">リスト</h2>
+			<section>
+				<h3>箇条書き</h3>
+				<ul>
+					<li>リストアイテム1</li>
+					<li>リストアイテム2</li>
+					<li>リストアイテム3</li>
+				</ul>
+			</section>
+			<section>
+				<h3>番号付きリスト</h3>
+				<ol>
+					<li>リストアイテム1</li>
+					<li>リストアイテム2</li>
+					<li>リストアイテム3</li>
+				</ol>
+			</section>
+		</section>
+		<section>
+			<h2 id="table">表（テーブル）</h2>
+			<table>
+				<tr><th>名前</th><th>血液型</th></tr>
+				<tr><td>山田太郎</td><td>A</td></tr>
+				<tr><td>山田花子</td><td>B</td></tr>
+			</table>
+		</section>
+		<section>
+			<h2 id="inputs">入力フォーム要素</h2>
+			<fieldset class="input-inline">
+				<label><input type="checkbox" name="group1" value="A">チェックボックスA</label>
+				<label><input type="checkbox" name="group1" value="B">チェックボックスB</label>
+			</fieldset>
+			<fieldset class="input-inline">
+				<label><input type="radio" name="group2" value="A">ラジオボタンA</label>
+				<label><input type="radio" name="group2" value="B">ラジオボタンB</label>
+			</fieldset>
+			<fieldset>
+				<div class="input-box">
+					<label class="input-box__label" for="text">お名前 <span class="required">*</span></label>
+					<input id="text" type="text" placeholder="山田 太郎">
+					<p class="input-box__desc">姓と名の間をスペース区切りで入力してください。</p>
+				</div>
+				<div class="input-box">
+					<label class="input-box__label" for="email">メールアドレス <span class="required">*</span></label>
+					<input id="email" type="email">
+					<p class="input-box__desc">このメールアドレス宛へお知らせをご案内します。</p>
+				</div>
+				<div class="input-box">
+					<label class="input-box__label" for="textarea">お問い合わせ内容</label>
+					<textarea id="textarea" rows="5"></textarea>
+				</div>
+			</fieldset>
+		</section>
 		<section>
 			<h2 id="card">カード</h2>
 			<div class="card">
@@ -29,10 +101,6 @@
 					<p class="card__description-rank"><span class="star--point">★★★★</span><span class="star--no-point">★</span> <span class="reviews">34 reviews</span> </p>
 				</div>
 			</div>
-		</section>
-		<section>
-			<h2 id="button">ボタン</h2>
-			<button class="button" type="button"><span class="icon">✉️  </span>BUTTON</button>
 		</section>
 	</main>
 	<footer>

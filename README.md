@@ -1,4 +1,4 @@
-# SimpleUI
+# HTML/CSSによる画面部品(UI)の例
 
-参考:
-https://chakra-ui.com/docs/components/box
+部品の参考にしたサイト:
+https://chakra-ui.com/
