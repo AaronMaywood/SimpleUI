@@ -81,3 +81,28 @@ footer {
 	color: #E2E8F0;
 }
 
+/* UI部品 - ボタン */
+
+.button {
+	padding: 0 1rem;
+	border: none;
+	background: #3182ce;
+	border-radius: 10px;
+	color: white;
+	display: flex;
+	align-items: center;
+}
+
+.button:hover {
+	background: #2b6cb0;
+}
+
+.button:active {
+   	background: #2c5282; 
+}
+
+.icon {
+	font-size: 2rem;
+	position: relative;
+	top: -3px;
+}
